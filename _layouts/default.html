@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    {% if site.google_verify %}
+      <meta name="google-site-verification" content="{{ site.google_verify }}" />
+    {% endif %}
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
